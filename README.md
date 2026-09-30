@@ -31,3 +31,49 @@ data/
 ├── score.py                                # Official Spotter validation script
 ├── requirements.txt                        # Environment dependencies
 └── README.md                               # Project documentation
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the Repository:
+```bash
+git clone [https://github.com/zhoyaginez/freight-rate-prediction.git](https://github.com/zhoyaginez/freight-rate-prediction.git)
+cd freight-rate-prediction
+```
+2. Set Up Environment & Install Dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 How to Run & Validate
+
+1. Execute the Pipeline
+Open Ena_Spotter_Assessment.ipynb in Google Colab or Jupyter Notebook and run all cells. This will clean the data, train the LightGBM model, save the serialized artifact to models/, and output predictions.
+2. Run Official Validation
+Execute the provided validator script from your terminal to verify prediction formatting and generate the December evaluation chart:
+```bash
+python score.py \
+  --predictions validation_predictions.csv \
+  --december-predictions data/december_chart_inputs.csv \
+  --output-dir scorer_results
+```
+Expected Output:
+```text
+Validated 12,000 final predictions.
+Validated 31 fixed December predictions.
+Created chart: scorer_results/candidate_december.png
+Final validation metrics are calculated by Spotter after submission.
+```
+
+---
+
+## 📈 December Prediction Chart
+🎥 Video Walkthrough & Report
+Loom Presentation: [WIP]
+Report PDF: Available in the root directory as freight_rate_prediction_report.pdf.
