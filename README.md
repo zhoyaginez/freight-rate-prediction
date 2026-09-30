@@ -16,10 +16,11 @@ An end-to-end Machine Learning pipeline developed for the Spotter Machine Learni
 ## 🛠️ Repository Structure
 
 ```text
-├── data/
-│   ├── train_test.csv                      # Labeled development dataset
-│   ├── validation.csv                      # Unlabeled validation set (12,000 loads)
-│   └── december_chart_inputs.csv          # Fixed 31-day December scenario inputs
+data/
+├── train_test.csv                       # Training/development dataset
+├── validation.csv                       # Unlabeled 12,000 loads
+├── validation_predictions_template.csv  # Original empty template
+└── december_chart_inputs.csv           # Updated 31-day December predictions
 ├── models/
 │   └── lightgbm_spot_rate_model.pkl        # Serialized LightGBM model artifact
 ├── scorer_results/
