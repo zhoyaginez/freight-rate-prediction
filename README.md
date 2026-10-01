@@ -74,6 +74,4 @@ Final validation metrics are calculated by Spotter after submission.
 ---
 
 ## 📈 December Prediction Chart
-🎥 Video Walkthrough & Report
-Loom Presentation: [WIP]
 Report PDF: Available in the root directory as freight_rate_prediction_report.pdf.
